@@ -4,46 +4,238 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=*, initial-scale=1.0" />
     <title>HATHOR</title>
+    <link rel="stylesheet" href="test.css" />
+    <link rel="icon" href="hathor-v3.ico" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   </head>
-  <body>
-    <nav>
-      <div class="logo">
+  <body id="accueil">
+    <div class="background"></div>
+    <nav class="navbar">
+      <div class="navbar__logo">
         <img src="hathor v3.png" alt="LOGO" />
         <h1>HATHOR</h1>
       </div>
-      <div class="discover">
-        <h1>VIBREZ AVEC NOUS,</h1>
-        <br />
-        <br />
-        <h1>VIBREZ EN MUSIQUE !</h1>
-        <h3>
-          <br />
-          <br />
-          <br />
-          <br />
-          Partagez une expérience musicale en temps réel avec d'autres
-          personnes.
-        </h3>
-      </div>
       <ul>
-        <li><a href="Accueil">accueil</a></li>
-        <li><a href="Offres">Offres</a></li>
+        <li><a href="#accueil">accueil</a></li>
+        <li><a href="#offres">Offres</a></li>
         <li>
-          <a href="tendances">Tendances</a>
+          <a href="#tendances">Tendances</a>
         </li>
-        <li><a href="signup.html">Profil</a></li>
-        <!-- <div class="btn-anim">
-          <div class="connexion">
-            <img src="#" alt="bonhomme_connexion" />
-          </div> -->
+        <li><a href="#profil">Profil</a></li>
       </ul>
+      <div class="hamburger">
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+      </div>
     </nav>
+    <main class="container">
+      <section class="hero">
+        <div class="discover">
+          <div class="discover__container">
+            <h1 class="discover__animate">
+              VIBREZ AVEC NOUS, VIBREZ EN MUSIQUE !
+            </h1>
+            <h3>
+              Partagez une expérience musicale en temps réel avec d'autres
+              personnes.
+            </h3>
+          </div>
+        </div>
+      </section>
+      <section class="section offres" id="offres">
+        <div class="section__container">
+          <h1>Offres</h1>
+          <br />
+          <div class="card-wrapper">
+            <div class="card">
+              <h2>FREEMIUM HATHOR</h2>
+              <b><p>Gratuit Pendant 1 Mois</p></b>
+
+              <p>• 1 compte HATHOR Premium</p>
+              <p>•Débit standard</p>
+              <b><p>• Écoute en 8 Dimensions</p></b>
+              <p>• Annulez à tout moment</p>
+              <button class="btn" onclick="location.href='#'">
+                Essai gratuit de 1 mois
+              </button>
+            </div>
+
+            <div class="card">
+              <h2>PREMIUM HATHOR</h2>
+              <p>• 1 compte Premium vérifié</p>
+              <p>• Réduction pour les étudiants et étudiantes éligibles</p>
+              <b><p>• Écoute en 8 Dimensions</p></b>
+              <p>• Annulez à tout moment</p>
+              <button class="btn" onclick="location.href='#'">
+                Essai gratuit de 2 mois
+              </button>
+            </div>
+            <div class="card">
+              <h2>HATHOR FAMILY</h2>
+              <b><p>17,99 € PAR MOIS</p></b>
+              <p>• Jusqu'à 6 comptes Premium</p>
+              <p>• Bloquez les titres au contenu explicite</p>
+              <b><p>•Écoute en 8 Dimensions</p></b>
+              <p>• Annulez à tout moment</p>
+              <button class="btn" onclick="location.href='#'">
+                Obtenez Premium Famille
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section tendances" id="tendances">
+        <div class="section__container">
+          <h1>Tendances</h1>
+          <div id="carousel">
+            <img
+              src="photo caroussel 1.png"
+              id="carousel-image-0"
+              class="carousel-image mv0to5"
+            />
+            <img
+              src="photo caroussel 2.png"
+              id="carousel-image-1"
+              class="carousel-image mv1to0"
+            />
+            <img
+              src="photo caroussel 3.png"
+              id="carousel-image-2"
+              class="carousel-image mv2to1"
+            />
+            <img
+              src="photo caroussel 4.png"
+              id="carousel-image-3"
+              class="carousel-image mv3to2"
+            />
+            <img
+              src="photo caroussel 5.png"
+              id="carousel-image-4"
+              class="carousel-image mv4to3"
+            />
+            <img
+              src="photo caroussel 1.png"
+              id="carousel-image-5"
+              class="carousel-image mv5to4"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section profil" id="profil">
+        <div class="section__container">
+          <h1>Notre histoire</h1>
+          <br />
+          <p class="write">
+            Notre entreprise se nomme Hathor elle a été crée le 20 décembre 2023
+            et est basé à paris. Notre objectif est de faire partir des
+            principaux acteur de notre marché grâce à notre service innovant qui
+            est l'écoute musicale en 8Dimensions. La 8Dimensions est une écoute
+            différente de la stéréo des écouteurs ou de la dolby atmos. Malgré
+            quel soit spécifique à l'écoute par le biais des écouteurs ou
+            casque,la 8D est une technique de mix qui permet à l’auditeur d'être
+            immergé dans la musique. Notre objectif à court terme est de
+            s’expandre géographiquement, si la plateforme n'est pas encore
+            disponible mondialement, l'objectif pourrait être d'étendre sa
+            présence dans de nouveaux marchés. Améliorer l'interface
+            utilisateur, la navigation, et les fonctionnalités pour rendre
+            l'expérience d'écoute plus agréable et intuitive. Notre objectif à
+            long terme est de d’avoir une croissance du nombre d’utilisateurs de
+            notre plateforme, atteindre une rentabilité par rapport à nos
+            investissement par le biais des publicité et des abonnements. Et de
+            pouvoir s’exporter vers de nouveaux marché afin de proposer de
+            nouveau service innovants pour nos utilisateurs.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__links">
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>A propos de nous</h2>
+              <a href="/">Comment ça marche</a>
+              <a href="/">Témoignages</a>
+              <a href="/">Carrières</a>
+              <a href="/">Investisseurs</a>
+              <a href="/">Conditions d'utilisation</a>
+            </div>
+            <div class="footer__link--items">
+              <h2>Nous contacter</h2>
+              <a href="/">Contact</a>
+              <a href="/">Support</a>
+              <a href="/">Destinations</a>
+              <a href="/">Sponsorships</a>
+            </div>
+          </div>
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>Vidéos</h2>
+              <a href="/">Envoyer une vidéo</a>
+              <a href="/">Ambassadeurs</a>
+              <a href="/">Agence</a>
+              <a href="/">Influenceurs</a>
+            </div>
+            <div class="footer__link--items">
+              <h2>Réseaux sociaux</h2>
+              <a href="/">Instagram</a>
+              <a href="/">Facebook</a>
+              <a href="/">Youtube</a>
+              <a href="/">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <section class="social__media">
+          <div class="social__media--wrap">
+            <div class="footer__logo">
+              <a href="/" id="footer__logo">HATHOR</a>
+            </div>
+            <p class="website__rights">© HATHOR 2024. Tous droits réservés</p>
+            <div class="social__icons">
+              <a href="/" class="social__icon--link" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="/" class="social__icon--link" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="/" class="social__icon--link" target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="/" class="social__icon--link" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
+
+<script>
+  // Wrap every letter in a span
+  var textWrapper = document.querySelector(".discover__animate");
+  textWrapper.innerHTML = textWrapper.textContent.replace(
+    /\S/g,
+    "<span class='letter'>$&</span>"
+  );
+
+  anime.timeline({ loop: false }).add({
+    targets: ".discover__animate .letter",
+    rotateY: [-90, 0],
+    duration: 1300,
+    delay: (el, i) => 45 * i,
+  });
+</script>
